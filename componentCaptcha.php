@@ -2,26 +2,8 @@
 /**
  * componentCaptcha
  * 
- * @author Michal Stefanak <stefanak.michal@gmail.com>
- * @link https://github.com/EsoLDo/Geometry-captcha
- * 
- * Base usage:
- 
- <?php
- $captcha = new componentCaptcha();
- $result = $captcha->create();
- if (true)
- {
-    //direct show image
-    $captcha->show();
- }
- else
- {
-    //save image to file
-    $captcha->save('./captcha_1657651.jpg');
- }
- ?> 
- 
+ * @author Michal Stefanak
+ * @link https://github.com/stefanak-michal/Geometry-captcha
  */
 class componentCaptcha
 {
@@ -584,7 +566,7 @@ class componentCaptcha
         
         if ($this->debug)
         {
-            imagestring($croped, 2, 2, $c['size']['y'] - 15, $c['angle'] . '°', $c['color']['red']);
+            imagestring($croped, 2, 2, $c['size']['y'] - 15, $c['angle'] . 'Â°', $c['color']['red']);
         }
         
         return $croped;
