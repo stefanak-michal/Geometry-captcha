@@ -10,21 +10,22 @@ Example of use:
 
 
 Base usage:
- 
-    <?php  
-    $captcha = new componentCaptcha();  
-    $result = $captcha->create();  
-    if (true)  
-    {  
-      //direct show image  
-      $captcha->show();  
-    }  
-    else  
-    {  
-      //save image to file  
-      $captcha->save('./captcha_1657651.jpg');  
-    }  
-    ?>
+```php 
+<?php  
+$captcha = new componentCaptcha();  
+$result = $captcha->create();  
+if (true)  
+{  
+  //direct show image  
+  $captcha->show();  
+}  
+else  
+{  
+  //save image to file  
+  $captcha->save('./captcha_1657651.jpg');  
+}  
+?>
+```
 
 \
 If you like this project and you want to support me, buy me a tea :)
